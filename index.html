@@ -46,7 +46,7 @@
                     class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                     RG
                 </label>
-                <input name="rg" id="rg" type="text"
+                <input name="rg" data-id="rg" type="text"
                     class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
                 <span class="text-red-600 text-sm font-medium mt-1 block"></span>
             </fieldset>
@@ -55,7 +55,8 @@
                     class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                     CPF (apenas números)
                 </label>
-                <input name="cpf" id="cpf" type="text" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                <input name="cpf" id="cpf" type="text" minlength="11" maxlength="14" required
+                    pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
                     class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
                 <span class="text-red-600 text-sm font-medium mt-1 block"></span>
             </fieldset>
@@ -65,6 +66,15 @@
                     Data de nascimento
                 </label>
                 <input name="aniversario" id="aniversario" type="date" required
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
+                <span class="text-red-600 text-sm font-medium mt-1 block"></span>
+            </fieldset>
+            <fieldset class="space-y-2">
+                <label for="senha"
+                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                    Senha
+                </label>
+                <input name="senha" id="senha" type="password" required minlength="8" maxlength="20"
                     class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
                 <span class="text-red-600 text-sm font-medium mt-1 block"></span>
             </fieldset>

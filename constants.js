@@ -34,7 +34,13 @@ const mensagens = {
     },
     termos: {
         valueMissing: 'Você deve aceitar nossos termos antes de continuar.',
-    }
+    },
+    senha: {
+        valueMissing: 'O campo de senha não pode estar vazio.',
+        patternMismatch: "A senha deve ter entre 8 a 20 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.",
+        customError: "A senha deve ter entre 8 a 20 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.",
+        tooShort: "A senha deve ter entre 8 a 20 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial."
+    },
 }
 
 export { tiposDeErro, mensagens };
